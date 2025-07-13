@@ -38,9 +38,9 @@ income-prediction-api/
 
 ## Model Training & Saving
 
+
 Train and persist the logistic regression model:
 
-```bash
 python train.py
 
 ## Serving with FastAPI
@@ -53,10 +53,10 @@ Visit docs at: http://127.0.0.1:8000/docs
 ## Dockerized Deployment
 
 Build and run the API inside a Docker container:
-# Build the image
+### Build the image
 docker build -t income-api .
 
-# Run the container
+### Run the container
 docker run -d -p 8000:8000 income-api
 
 ## Run Unit Tests
@@ -69,7 +69,7 @@ pytest -v tests/test_api.py
 Endpoint
 POST /predict
 
-Sample JSON Input
+## Sample JSON Input
 
 {
   "age": 37,
@@ -88,7 +88,7 @@ Sample JSON Input
   "native-country": "United-States"
 }
 
-Sample Output
+## Sample Output
 {
   "prediction": ">50K",
   "input": {
@@ -97,12 +97,12 @@ Sample Output
   }
 }
 
-Requirements
+## Requirements
 Install Python dependencies:
 
 pip install -r requirements.txt
 
-Author
+## Author
 Ayush Bose
 Senior Data Scientist | GenAI | ML Engineering
 LinkedIn - https://www.linkedin.com/in/boseayush384/
